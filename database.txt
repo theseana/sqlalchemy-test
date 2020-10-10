@@ -1,0 +1,5 @@
+CREATE DATABASE inventory;
+
+CREATE USER 'sqlalch'@'localhost' IDENTIFIED BY 'Man30hastam!';
+GRANT ALL PRIVILEGES ON inventory.* TO 'sqlalch'@'localhost';
+FLUSH PRIVILEGES;
