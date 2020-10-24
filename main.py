@@ -3,9 +3,9 @@ from connection import Connection
 from models import Product
 
 
-session = Connection.get_connection()
+session = Connection().create_session()
 
-m = Product(name='IceCream', price=2, count=1)
+m = Product(name='Cookie', price=3, count=2)
 
 session.add(m)
 session.commit()
